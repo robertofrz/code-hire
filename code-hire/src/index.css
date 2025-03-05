@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+html,
+body {
+  min-height: 100vh; /* Garante altura total */
+  width: 100%; /* Evita scroll horizontal */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(233, 233, 233);
+  background-color: #01060c;
+  font-family: "Lexend Deca", serif;
+}

@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.display {
+  width: 100%;
+  max-width: 794px;
+  height: 1123px;
+  aspect-ratio: 210 / 297;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  overflow: hidden;
+  background: white;
+  margin: 3rem auto 1rem auto;
+  padding: 56px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 14px;
+  gap: 0.2rem;
+}
+.display * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.session-name {
+  text-align: left;
+  color: black;
+  font-size: 1.2rem;
+}
+.personal-container {
+  overflow: hidden;
+  height: min-content;
+  max-height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 0.7rem;
+}
+
+.skills-container {
+  overflow: hidden;
+  height: min-content;
+  max-height: 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+.session-divider {
+  border: 0.8px solid black;
+}
+.skills-list {
+  width: 99%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 1rem;
+  margin: 0 0 0 1.1rem;
+}
+.experiences-container {
+  overflow: hidden;
+  height: min-content;
+  max-height: 505px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+.exp-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.exp-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-description {
+  font-style: italic;
+  text-align: justify;
+}
+.education-container {
+  overflow: hidden;
+  height: min-content;
+  max-height: 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+.education-title {
+  display: flex;
+  justify-content: space-between;
+}
+.education-info {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.3rem;
+}
+.languages-container {
+  overflow: hidden;
+  height: min-content;
+  max-height: 126px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+.language-title {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: #1155cc;
+}
+@media (max-width: 500px) {
+  .display {
+    max-width: 100%; /* A div ocupará toda a largura da tela */
+    height: auto;
+    margin: 1rem auto 3rem auto;
+    padding: 30px;
+    font-size: 8px;
+  }
+  .session-name {
+    font-size: 9px;
+  }
+  .personal-container,
+  .skills-container,
+  .experiences-container,
+  .education-container,
+  .languages-container {
+    font-size: 8px;
+  }
+}
+@media print {
+  .edit {
+    display: none;
+  }
+  .print-area {
+    display: block;
+  }
+  .print-area {
+    width: 100vw;
+    margin: 0;
+  }
+}
