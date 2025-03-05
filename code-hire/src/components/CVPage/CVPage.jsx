@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./EditCV.css";
 import "./DisplayCV.css";
 import EditCV from "./EditCV.jsx";

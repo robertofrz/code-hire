@@ -1,4 +1,3 @@
-import React from "react";
 import "./DisplayCV.css";
 
 function DisplayCV({ cvData }) {
