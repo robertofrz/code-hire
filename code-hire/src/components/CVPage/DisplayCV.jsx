@@ -1,4 +1,5 @@
-import "./DisplayCV.css";
+import "../../styles/DisplayCV.css";
+import PropTypes from "prop-types";
 
 function DisplayCV({ cvData }) {
   return (
@@ -85,5 +86,9 @@ function DisplayCV({ cvData }) {
     </div>
   );
 }
+
+DisplayCV.propTypes = {
+  cvData: PropTypes.object.isRequired,
+};
 
 export default DisplayCV;

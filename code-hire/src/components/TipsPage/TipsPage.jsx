@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./TipsPage.css";
+import "../../styles/TipsPage.css";
 function TipsPage() {
   return (
     <div className="tips">

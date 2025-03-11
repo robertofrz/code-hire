@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Importando o Link para navegação
-import "./HomePage.css";
+import "../../styles/HomePage.css";
 function HomePage() {
   return (
     <div className="main-container">
