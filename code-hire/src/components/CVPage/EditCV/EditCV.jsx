@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
-import "../../styles/EditCV.css";
-import { useState } from "react";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import PersonalInfo from "./PersonalInfo.jsx";
-import Skill from "./Skills.jsx";
-import Experience from "./Experience.jsx";
-import Education from "./Education.jsx";
-import Languages from "./Languages.jsx";
+import PersonalInfo from "../PersonalInfo/PersonalInfo.jsx";
+import Skill from "../Skills/Skills.jsx";
+import Experience from "../Experience/Experience.jsx";
+import Education from "../Education/Education.jsx";
+import Languages from "../Languages/Languages.jsx";
+import { useState } from "react";
 
-function EditCV({ cvData, setCvData }) {
+function EditCV() {
   const [activeSection, setActiveSection] = useState(null);
-
   function printCV() {
     window.print();
   }
@@ -27,32 +26,22 @@ function EditCV({ cvData, setCvData }) {
       </div>
       <div className="edit-session">
         <PersonalInfo
-          cvData={cvData}
-          setCvData={setCvData}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
         />
         <Skill
-          cvData={cvData}
-          setCvData={setCvData}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
         />
         <Experience
-          cvData={cvData}
-          setCvData={setCvData}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
         />
         <Education
-          cvData={cvData}
-          setCvData={setCvData}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
         />
         <Languages
-          cvData={cvData}
-          setCvData={setCvData}
           activeSection={activeSection}
           setActiveSection={setActiveSection}
         />

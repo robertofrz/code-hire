@@ -1,8 +1,11 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import Section from "./Section.jsx";
+import Section from "../Section/Section.jsx";
+import { useCV } from "../CvContext.jsx";
 
-function Experience({ cvData, setCvData, activeSection, setActiveSection }) {
+function Experience({ activeSection, setActiveSection }) {
+  const { cvData, setCvData } = useCV();
+
   const experiences = cvData.experiences || [];
 
   function handleChange(e, index) {
@@ -14,7 +17,6 @@ function Experience({ cvData, setCvData, activeSection, setActiveSection }) {
       [name]: type === "checkbox" ? checked : value,
     };
 
-    // Se o usuário marcou "Present", zera o endDate
     if (name === "isPresent" && checked) {
       updatedExperiences[index].endDate = "";
     }

@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom"; // Importando o Link para navegação
+import { Link } from "react-router-dom";
 import "../../styles/HomePage.css";
 function HomePage() {
   return (

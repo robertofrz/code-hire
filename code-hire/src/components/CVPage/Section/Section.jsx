@@ -1,4 +1,4 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
 
 function Section({
@@ -32,7 +32,7 @@ Section.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   sectionKey: PropTypes.string.isRequired,
-  activeSection: PropTypes.string,
+  activeSection: PropTypes.string.isRequired,
   setActiveSection: PropTypes.func.isRequired,
 };
 

@@ -1,8 +1,10 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import Section from "./Section.jsx";
+import Section from "../Section/Section.jsx";
+import { useCV } from "../CvContext.jsx";
 
-function PersonalInfo({ cvData, setCvData, activeSection, setActiveSection }) {
+function PersonalInfo({ activeSection, setActiveSection }) {
+  const { cvData, setCvData } = useCV();
   function handleChange(e) {
     setCvData({
       ...cvData,
@@ -22,6 +24,7 @@ function PersonalInfo({ cvData, setCvData, activeSection, setActiveSection }) {
           <label htmlFor="name">Full Name</label>
 
           <input
+            data-testid="test-mockdata"
             id="name"
             name="name"
             type="text"
@@ -55,7 +58,7 @@ function PersonalInfo({ cvData, setCvData, activeSection, setActiveSection }) {
           <input
             id="phone"
             name="phone"
-            type="text"
+            type="tel"
             value={cvData.personalInfo.phone}
             onChange={handleChange}
           />
@@ -65,7 +68,7 @@ function PersonalInfo({ cvData, setCvData, activeSection, setActiveSection }) {
           <input
             id="linkedin"
             name="linkedin"
-            type="text"
+            type="url"
             value={cvData.personalInfo.linkedin}
             onChange={handleChange}
           />
@@ -75,7 +78,7 @@ function PersonalInfo({ cvData, setCvData, activeSection, setActiveSection }) {
           <input
             id="github"
             name="github"
-            type="text"
+            type="url"
             value={cvData.personalInfo.github}
             onChange={handleChange}
           />

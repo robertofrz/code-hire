@@ -1,8 +1,10 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import Section from "./Section.jsx";
+import Section from "../Section/Section.jsx";
+import { useCV } from "../CvContext.jsx";
 
-function Skill({ cvData, setCvData, activeSection, setActiveSection }) {
+function Skill({ activeSection, setActiveSection }) {
+  const { cvData, setCvData } = useCV();
   const skills = cvData.skills || [];
 
   function addSkill() {

@@ -1,8 +1,11 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import Section from "./Section.jsx";
+import Section from "../Section/Section.jsx";
+import { useCV } from "../CvContext.jsx";
 
-function Languages({ cvData, setCvData, activeSection, setActiveSection }) {
+function Languages({ activeSection, setActiveSection }) {
+  const { cvData, setCvData } = useCV();
+
   const languages = cvData.languages || [];
 
   function handleChange(e, index) {

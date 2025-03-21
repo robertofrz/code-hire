@@ -1,8 +1,11 @@
-import "../../styles/EditCV.css";
+import "../../../styles/EditCV.css";
 import PropTypes from "prop-types";
-import Section from "./Section.jsx";
+import Section from "../Section/Section.jsx";
+import { useCV } from "../CvContext.jsx";
 
-function Education({ cvData, setCvData, activeSection, setActiveSection }) {
+function Education({ activeSection, setActiveSection }) {
+  const { cvData, setCvData } = useCV();
+
   const education = cvData.education || [];
 
   function addCourse() {

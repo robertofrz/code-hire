@@ -1,7 +1,10 @@
-import "../../styles/DisplayCV.css";
+import "../../../styles/DisplayCV.css";
 import PropTypes from "prop-types";
+import { useCV } from "../CvContext.jsx";
 
-function DisplayCV({ cvData }) {
+function DisplayCV() {
+  const { cvData } = useCV();
+
   return (
     <div className="display print-area">
       <div className="personal-container">
