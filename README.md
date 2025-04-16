@@ -1,12 +1,70 @@
-Introducing codeHire: The ultimate resume builder designed not only for tech professionals but also to help HR professionals streamline the hiring process! 💼💻
+# 💼 codeHire – Smart Resume Builder
 
-With codeHire, you can easily create a CV optimized for ATS (Applicant Tracking Systems), ensuring it stands out in the hiring process. Whether you're a software developer, data scientist, or any tech professional, this tool is built to help you land that job. 🎯
+**codeHire** is a modern resume builder tailored for tech professionals, while also helping HR teams streamline the hiring process. With ATS-optimized structure and a smooth real-time editing experience, it’s built to help job seekers stand out.
 
-🔹 Key Features:
-✍️ Real-time input updates: Watch your CV come together as you fill in your information!
-📑 CV tips page: Get insights into crafting the perfect resume and how ATS works.
-📥 Download your CV as a PDF or print it directly from the app.
-📱 Responsive design: Optimized for both mobile and desktop, with smooth editing and interactive sections.
-🔍 ATS Optimization: Your CV is created to be more structured, making it easier for HR professionals to evaluate.
+## ✨ Key Features
 
-Built with React ⚛️ and Vite ⚡, this app brings modern web development tools together for a seamless user experience. By optimizing resumes for both applicants and HR professionals, codeHire improves the hiring process, making it more efficient for everyone. 💼
+- ✍️ Real-time input updates: See your resume build as you type!
+- 📑 CV tips page: Learn how to optimize your resume and understand ATS systems
+- 📥 Export to PDF or print directly from your browser
+- 📱 Fully responsive design, optimized for desktop and mobile
+- 🔍 ATS Optimization: Structured for easy parsing by recruiters and tracking systems
+- 🔄 Seamless navigation with React Router
+- 🌍 Auto-save with localStorage: Never lose your progress
+- ⚙️ State management with Context API for a dynamic, consistent experience
+
+## 🚀 Tech Stack
+
+- React + Vite
+- React Router
+- Context API
+- localStorage for data persistence
+- PDF download / print integration
+- Mobile-first design
+
+## 🔗 Live Demo
+
+Try it now:  
+👉 Visit here: https://code-hire-cvbuilder.vercel.app/
+
+## 📄 License
+
+This project is licensed under the MIT License.  
+Feel free to use, adapt, or contribute as you like!
+
+----------------------------------------------------------------------------------------
+
+# 💼 codeHire – Construtor de Currículos Inteligente
+
+O **codeHire** é um construtor de currículos moderno, criado especialmente para profissionais de tecnologia e pensado também para facilitar o trabalho de recrutadores. Com foco em responsividade, otimização para ATS e uma experiência de edição fluida, é a ferramenta ideal para quem quer se destacar no processo seletivo.
+
+## ✨ Funcionalidades
+
+- ✍️ Atualização em tempo real: veja seu currículo sendo montado conforme preenche os dados
+- 📑 Página de dicas: aprenda a otimizar seu currículo e entenda como funcionam os sistemas ATS
+- 📥 Download em PDF ou impressão direta do navegador
+- 📱 Design responsivo para mobile e desktop
+- 🔍 Otimização para ATS: estrutura pensada para facilitar a leitura automatizada e a triagem por recrutadores
+- 🔄 Navegação fluida com React Router
+- 🌍 Salvamento automático com localStorage: continue de onde parou, mesmo após fechar o navegador
+- ⚙️ Gerenciamento de estado com Context API para uma experiência dinâmica
+
+## 🚀 Tecnologias utilizadas
+
+- React + Vite
+- React Router
+- Context API
+- localStorage
+- PDF Export / Print Support
+- Mobile-first Design
+
+## 🔗 Deploy
+
+Experimente agora:  
+👉 Acesse aqui: https://code-hire-cvbuilder.vercel.app/
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.  
+Fique à vontade para usar, contribuir ou adaptar como quiser!
+
